@@ -50,15 +50,17 @@ export default function Input() {
   };
   const reset = () => {
     /* STEP 5 */
-    return setInputValue('')
+    setInputValue('')
   };
 
   const style = {
     fontSize: '1.5em',
     marginBottom: '0.3em',
-    color: (inputValue.length >= 10) ? 'crimson' : 'royalblue' , /* STEP 2 */
+    color: (inputValue.length >= 10) ? 'crimson' : 'royalblue', /* STEP 2 */
   };
-
+  console.log(style)
+  
+ 
  let uppercaseText = inputValue.toUpperCase();
  let { value } = inputValue
 
